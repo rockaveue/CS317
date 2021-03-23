@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width = "match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:background="@color/colorAccent">
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/jinwoo_circled_foreground"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Dulguun"
+                android:textColor="#fff"
+                android:textSize="22sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="ПХ-ийн оюутан"
+                android:textColor="#fff"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:drawableStart="@drawable/person_black"
+                android:background="@color/colorAccent"
+                android:textColor="#fff"
+                android:textColorHint="#DDD"
+                android:layout_marginTop="80dp"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:hint="Username"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/person_black" />
+            <EditText
+                android:drawableStart="@drawable/lock_black"
+                android:textColor="#fff"
+                android:background="@color/colorAccent"
+                android:textColorHint="#ddd"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:hint="Password"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText"
+                android:drawableLeft="@drawable/lock_black" />
+            <Button
+                android:text="LOGIN"
+                android:background="#000072"
+                android:textColor="#fff"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="21sp"
+                android:layout_marginTop="60dp"
+                android:text="Forgot Password ?"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
